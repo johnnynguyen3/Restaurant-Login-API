@@ -4,7 +4,7 @@ Date: December 10, 2021
 To Run:
 1. unzip the folder
 2. have the mongo shell ready to go
-3. type in integrated terminal 'npm i'
+3. type in terminal with folder located 'npm i'
 4. Once all dependencies are done installing you want to initialize the database by typing in 'node database-initializer.js'
 5. Once the database has been initialized, you can now type 'npm run run' to start the server.
 
