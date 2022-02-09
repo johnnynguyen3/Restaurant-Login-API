@@ -1,0 +1,11 @@
+html 
+    head
+        title Public Users 
+    body
+        include ./header
+
+
+    h2 Public Users 
+    each user of users
+        a(href=`/users/`+user._id) #{user.username} 
+        br

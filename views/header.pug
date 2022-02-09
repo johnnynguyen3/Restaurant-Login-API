@@ -1,0 +1,23 @@
+a(href = "/") Home 
+|   |
+a(href = "/users") Users 
+if session
+    |   |
+    a(href = "/orderform") Order Food
+    |   |
+    a(href = `/users/${userID}`) click here to view your profile
+    |   |
+    a(href = "/logout") Logout
+else 
+    |   |
+    a(href = "/login") Login
+    |   |
+    a(href = "/register") Register
+
+//- Logged In: 
+//-     Home 
+//-     Users 
+//-     Order Food 
+//-     "Hello user"
+//-     click here to view your profile 
+//-     Logout 

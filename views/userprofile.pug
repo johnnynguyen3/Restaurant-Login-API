@@ -1,0 +1,26 @@
+html 
+    head
+        title Profile for #{username}
+    body
+        include ./header
+
+
+        h2 Profile for #{username}
+        if ownProfile
+            p Private Mode: 
+            form(action=`/users/${userID}` method='POST')
+                if privacy
+                    input(type='radio' name='privacy' value='private' checked=true)
+                    label(for='private') Private
+                    input(type='radio' name='privacy' value='public')
+                    label(for='public') Public 
+                    button(type='submit') Save Changes
+                else 
+                    input(type='radio' name='privacy' value='private')
+                    label(for='private') Private
+                    input(type='radio' name='privacy' value='public' checked=true)
+                    label(for='public') Public 
+                    button(type='submit') Save Changes
+        br
+        h3 Order History
+    
