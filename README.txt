@@ -1,6 +1,8 @@
 Developer/Author: Johnny Nguyen
 Date: December 10, 2021
 
+Important: In order to run this programm, you must have working knowledge of MongoDB (No-SQL database) and MongoD running.
+
 To Run:
 1. unzip the folder
 2. have the mongo shell ready to go
